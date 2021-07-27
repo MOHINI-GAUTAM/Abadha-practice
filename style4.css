@@ -1,0 +1,186 @@
+*{
+    /*Default CSS on all elements*/
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.banner{
+    background-image: url(/Abadha-practice/gallery/abadha\ logo.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 30%;
+    background-attachment: fixed;
+    height: 20vw;
+    min-height: 100px;
+    max-height: 400px;
+}
+/*Style the top navigation bar*/
+nav {
+    display: flex;
+    background-color: rgb(37, 35, 35);
+    align-items: center;
+    position: sticky;   
+}
+/*Style the nav bar links*/
+nav .menu-btn{
+    color: rgb(255, 255, 255);
+    padding: 15px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/*Change color on hover*/
+nav .menu-btn:hover{
+    background-color: rgba(0, 0, 0, 0.753);
+    color: rgb(252, 4, 4);
+}
+
+
+
+@media screen and (max-width: 500px){
+    nav {
+        flex-direction: column;
+    }
+}
+    
+
+section{
+    display: inline-flexbox;
+    align-items: center;
+    padding-top: 40px;
+    height: 100vh;
+    
+}
+
+section p{
+    display: flex;
+
+    font-size: large;
+    margin: 90px;
+    justify-content: baseline;
+    text-decoration: aliceblue;
+    color: aliceblue;
+}
+
+#videoBG {
+  object-fit: cover;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+/*
+#videoBG {
+    position:fixed;
+    z-index: -1;
+}
+@media (min-aspect-ratio: 16/9) {
+    #videoBG {
+        width:100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    #videoBG { 
+        width:auto;
+        height: 100%;
+    }
+}
+@media (max-width: 767px) {
+    #videoBG {
+        display: none;
+    }
+    body {
+        background: url('gallery/Abadha\ intro.mp4');
+        background-size: cover;
+    }
+}*/
+
+
+body{
+    margin: 10px;
+    max-width: 100%;
+    max-height: 600px;
+    background: url(/Abadha-practice/gallery/Abadha\ intro.mp4);
+    background-repeat: repeat;
+    
+    background-color: black;
+    text-decoration: blanchedalmond;
+    overflow-wrap: normal;
+}
+
+img{ 
+    border-radius: 5px;
+    block-size: 50%;
+    padding:20px 20px;
+} 
+#left{
+    float: left;
+}  
+#right{
+    float: right;
+}
+h1,h5{
+    size: 200px;
+    text-align: center;
+    padding-bottom: 40px;
+    color: rgb(253, 246, 236);
+}
+
+
+
+footer  {
+    background-color: rgb(212, 13, 13);
+    overflow: hidden;
+}
+
+footer a {
+    align-items: flex-end;
+    object-position: bottom sticky;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    color: thistle;
+}
+
+.container{
+    
+    display: grid;
+    grid-row: 200px 200px;
+    grid-gap:20px;   
+}
+.items{
+            
+            margin: 10px rgb(248, 247, 247);
+            border-radius: 10px; 
+            padding: 50px;
+            text-align: center;
+}
+#item1{
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 5;
+}
+
+.box-set{
+    
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: content-box;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
